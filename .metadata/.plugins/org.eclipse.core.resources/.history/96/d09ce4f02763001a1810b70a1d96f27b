@@ -159,9 +159,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM2_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
-  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
   // setup all output channel timer PWM
@@ -200,8 +200,8 @@ int main(void)
   while (1)
   {
 
-	  //pwm_fade_test();
-	  pwm_blink_test();
+	  pwm_fade_test();
+	  //pwm_blink_test();
 
     /* USER CODE END WHILE */
 

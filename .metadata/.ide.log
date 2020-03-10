@@ -1000,3 +1000,272 @@
 2020-03-10 22:18:06,900 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1866mS.
 2020-03-10 22:18:06,900 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
 2020-03-10 22:18:06,901 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:04:18,336 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 624574184 Bytes (1073741824)
+2020-03-10 23:04:18,444 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 631412776 Bytes (1073741824)
+2020-03-10 23:04:18,637 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 640827080 Bytes (1073741824)
+2020-03-10 23:04:18,800 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:04:18,800 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:04:18,801 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:04:18,801 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:04:18,801 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:04:18,801 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:04:18,801 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:04:18,990 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:04:19,047 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:04:19,084 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:04:19,144 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:04:19,146 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:04:19,203 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:04:19,371 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:04:19,372 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:04:19,372 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:04:19,375 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:04:19,548 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:04:19,549 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:04:19,607 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:04:19,608 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:04:19,608 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:04:19,610 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:04:19,674 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:04:19,676 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:04:19,735 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:04:19,738 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:04:19,824 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:04:19,826 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:04:19,884 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:04:19,885 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:04:19,947 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:04:19,953 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:04:20,015 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:04:20,017 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:04:20,097 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:04:20,509 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 13mS.
+2020-03-10 23:04:20,510 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:04:20,747 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:04:22,403 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1893mS.
+2020-03-10 23:04:22,403 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:04:22,404 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:12:08,139 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 513804824 Bytes (1073741824)
+2020-03-10 23:12:08,325 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 523619312 Bytes (1073741824)
+2020-03-10 23:12:08,411 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 546687984 Bytes (1073741824)
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:12:08,571 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:12:08,571 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:12:08,761 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:12:08,819 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:12:08,854 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:12:08,916 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:12:08,918 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:12:08,999 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:12:09,167 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:12:09,167 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:12:09,167 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:12:09,171 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:12:09,347 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:12:09,348 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:12:09,407 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:12:09,407 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:12:09,408 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:12:09,410 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:12:09,476 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:12:09,477 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:12:09,536 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:12:09,539 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:12:09,625 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:12:09,627 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:12:09,684 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:12:09,686 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:12:09,749 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:12:09,754 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:12:09,816 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:12:09,818 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:12:09,896 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:12:10,309 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 13mS.
+2020-03-10 23:12:10,310 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:12:10,544 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:12:12,408 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 2098mS.
+2020-03-10 23:12:12,409 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:12:12,410 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:14:03,359 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 888263616 Bytes (1073741824)
+2020-03-10 23:14:03,462 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 895605744 Bytes (1073741824)
+2020-03-10 23:14:03,635 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 906611656 Bytes (1073741824)
+2020-03-10 23:14:03,832 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:14:03,833 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:14:03,833 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:14:03,833 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:14:03,833 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:14:03,833 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:14:03,833 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:14:04,023 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:14:04,080 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:14:04,114 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:14:04,177 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:14:04,179 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:14:04,238 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:14:04,412 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:14:04,413 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:14:04,413 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:14:04,416 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:14:04,535 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:14:04,537 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:14:04,599 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:14:04,600 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:14:04,600 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:14:04,602 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:14:04,671 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:14:04,673 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:14:04,733 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:14:04,736 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:14:04,825 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:14:04,827 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:14:04,885 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:14:04,887 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:14:04,951 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:14:04,956 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:14:05,022 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:14:05,024 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:14:05,105 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:14:05,784 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 14mS.
+2020-03-10 23:14:05,785 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:14:06,153 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:14:07,217 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1432mS.
+2020-03-10 23:14:07,217 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:14:07,223 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:48:31,484 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 607514408 Bytes (1073741824)
+2020-03-10 23:48:31,591 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 614856488 Bytes (1073741824)
+2020-03-10 23:48:31,694 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 621145896 Bytes (1073741824)
+2020-03-10 23:48:31,852 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:48:31,853 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:48:31,853 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:48:31,853 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:48:31,853 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:48:31,853 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:48:32,026 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:48:32,082 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:48:32,107 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:48:32,166 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:48:32,167 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:48:32,224 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:48:32,331 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:48:32,332 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:48:32,332 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:48:32,335 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:48:32,436 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:48:32,438 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:48:32,495 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:48:32,496 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:48:32,496 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:48:32,498 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:48:32,563 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:48:32,564 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:48:32,676 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:48:32,679 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:48:32,764 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:48:32,765 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:48:32,821 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:48:32,823 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:48:32,883 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:48:32,888 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:48:32,950 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:48:32,952 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:48:33,029 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:48:33,434 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 13mS.
+2020-03-10 23:48:33,435 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:48:33,665 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:48:35,385 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1950mS.
+2020-03-10 23:48:35,386 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:48:35,386 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:49:44,604 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 891124304 Bytes (1073741824)
+2020-03-10 23:49:44,777 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 899514976 Bytes (1073741824)
+2020-03-10 23:49:44,960 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 395563472 Bytes (1073741824)
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:49:45,134 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:49:45,134 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:49:45,344 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:49:45,402 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:49:45,439 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:49:45,502 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:49:45,504 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:49:45,564 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:49:45,757 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:49:45,757 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:49:45,758 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:49:45,761 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:49:45,882 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:49:45,884 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:49:45,944 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:49:45,944 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:49:45,945 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:49:45,947 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:49:46,016 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:49:46,017 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:49:46,078 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:49:46,082 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:49:46,171 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:49:46,172 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:49:46,231 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:49:46,233 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:49:46,297 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:49:46,303 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:49:46,365 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:49:46,367 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:49:46,444 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:49:46,949 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 14mS.
+2020-03-10 23:49:46,950 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:49:47,180 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:49:48,615 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1665mS.
+2020-03-10 23:49:48,616 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:49:48,616 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-03-10 23:49:51,730 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 459786680 Bytes (1073741824)
+2020-03-10 23:49:51,827 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 467273288 Bytes (1073741824)
+2020-03-10 23:49:51,914 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 490681672 Bytes (1073741824)
+2020-03-10 23:49:52,105 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-03-10 23:49:52,105 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:52,105 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:52,105 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8F0
+2020-03-10 23:49:52,106 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-03-10 23:49:52,106 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-03-10 23:49:52,106 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-03-10 23:49:52,348 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp_save
+2020-03-10 23:49:52,402 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/license.tmp
+2020-03-10 23:49:52,439 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c_save
+2020-03-10 23:49:52,499 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/gpio.c
+2020-03-10 23:49:52,501 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h_save
+2020-03-10 23:49:52,557 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/gpio.h
+2020-03-10 23:49:52,719 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-03-10 23:49:52,719 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-03-10 23:49:52,719 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:49:52,722 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c_save
+2020-03-10 23:49:52,832 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/tim.c
+2020-03-10 23:49:52,833 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h_save
+2020-03-10 23:49:52,892 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/tim.h
+2020-03-10 23:49:52,892 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-03-10 23:49:52,893 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-03-10 23:49:52,895 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c_save
+2020-03-10 23:49:52,963 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_it.c
+2020-03-10 23:49:52,964 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h_save
+2020-03-10 23:49:53,024 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_it.h
+2020-03-10 23:49:53,027 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c_save
+2020-03-10 23:49:53,111 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/stm32f0xx_hal_msp.c
+2020-03-10 23:49:53,113 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp_save
+2020-03-10 23:49:53,169 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/MXTmpFiles/system.tmp
+2020-03-10 23:49:53,171 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h_save
+2020-03-10 23:49:53,233 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/stm32f0xx_hal_conf.h
+2020-03-10 23:49:53,238 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h_save
+2020-03-10 23:49:53,303 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Inc/main.h
+2020-03-10 23:49:53,306 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c_save
+2020-03-10 23:49:53,389 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Core/Src/main.c
+2020-03-10 23:49:53,877 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 13mS.
+2020-03-10 23:49:53,878 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-03-10 23:49:54,108 [INFO] ConfigFileManager:1066 - The Die is : DIE440
+2020-03-10 23:49:55,271 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1393mS.
+2020-03-10 23:49:55,272 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-03-10 23:49:55,272 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.

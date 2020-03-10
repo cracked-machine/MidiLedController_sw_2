@@ -102,6 +102,7 @@ void pwm_fade_test()
 void pwm_blink_test()
 {
 	  TIM2->CCR1 = 0;
+	//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_15);
 	  TIM2->CCR2 = 0;
 
 	  TIM3->CCR1 = 0;
@@ -116,6 +117,7 @@ void pwm_blink_test()
 	  HAL_Delay(pwm_delay);
 
 	  TIM2->CCR1 = pwm_duty;
+	  //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_15);
 	  TIM2->CCR2 = pwm_duty;
 
 	  TIM3->CCR1 = pwm_duty;
@@ -159,9 +161,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM2_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
-  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
   // setup all output channel timer PWM
@@ -200,8 +202,8 @@ int main(void)
   while (1)
   {
 
-	  //pwm_fade_test();
-	  pwm_blink_test();
+	  pwm_fade_test();
+	  //pwm_blink_test();
 
     /* USER CODE END WHILE */
 
