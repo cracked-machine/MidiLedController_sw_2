@@ -1,0 +1,10 @@
+22:45:00 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17500	    136	   1768	  19404	   4bcc	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+ 
+
+22:45:00 Build Finished. 0 errors, 0 warnings. (took 535ms)
+
