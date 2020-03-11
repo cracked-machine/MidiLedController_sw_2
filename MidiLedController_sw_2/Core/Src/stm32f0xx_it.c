@@ -23,6 +23,7 @@
 #include "stm32f0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,6 +44,48 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
+// MIDI
+
+// first 128 values are note data commands
+#define MIDI_MAX_NOTE 0x7F
+
+// common midi data
+#define MIDI_TIMCLK 248
+#define MIDI_NOTEON 144
+#define MIDI_NOTEC2 36
+#define MIDI_NOTECSHARP2 37
+#define MIDI_NOTED2 38
+#define MIDI_NOTEDSHARP2 39
+#define MIDI_NOTEE2 40
+#define MIDI_NOTEF2 41
+#define NIDI_NOTEFSHARP2 42
+#define MIDI_NOTEG2 43
+#define MIDI_NOTEGSHARP2 44
+
+// Note On commands
+#define CH1_NOTE_ON 0x90
+#define CH2_NOTE_ON 0x91
+#define CH3_NOTE_ON 0x92
+#define CH4_NOTE_ON 0x93
+#define CH5_NOTE_ON 0x94
+#define CH6_NOTE_ON 0x95
+#define CH7_NOTE_ON 0x96
+#define CH8_NOTE_ON 0x97
+#define CH9_NOTE_ON 0x98
+#define CH10_NOTE_ON 0x99
+#define CH11_NOTE_ON 0x9A
+#define CH12_NOTE_ON 0x9B
+#define CH13_NOTE_ON 0x9C
+#define CH14_NOTE_ON 0x9D
+#define CH15_NOTE_ON 0x9E
+#define CH16_NOTE_ON 0x9F
+
+int enabledNoteOnCmd = CH1_NOTE_ON;				// default to MIDI Channel 1
+int newMidiByte = 0;
+int lastMidiCmd = 0;
+int runningStatus = 0;
+char midiData[2] = {0};
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -53,11 +96,101 @@
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc;
+extern TIM_HandleTypeDef htim16;
 /* USER CODE BEGIN EV */
+
+
+void pwm_switch_on()
+{
+
+	// prevent TIM16 (the output channel reset timer) from premature fire
+	TIM16->SR |= TIM_SR_UIF;
+
+	if ((USART1->ISR & USART_ISR_RXNE) == USART_ISR_RXNE)
+	{
+		newMidiByte = (uint8_t)(USART1->RDR); 	// grab first MIDI byte from USART
+
+		if(newMidiByte > MIDI_MAX_NOTE) 		// catch initial MIDI command e.g. Note On
+		{
+			if(newMidiByte == enabledNoteOnCmd)
+			{
+				lastMidiCmd = enabledNoteOnCmd;		// remember note on cmd for next iteration
+													// to support MIDI "Running Status"
+				runningStatus = 0;
+			}
+		}
+		else 										// catch MIDI note/velocity data
+		{
+			if(lastMidiCmd == enabledNoteOnCmd)
+			{
+				for(int m=0; m < 2; m++)			// grab second and third MIDI byte from USART
+				{
+					while((USART1->ISR & USART_ISR_RXNE) != USART_ISR_RXNE){  }
+					midiData[m] = (uint8_t)(USART1->RDR);
+				}
+				uint32_t rootpwm = sqrt(adc_data_in[0]/16);
+				if(rootpwm == 0) { rootpwm = 1; }
+
+				switch(newMidiByte)					// switch on out chan for the MIDI note
+				{
+					case MIDI_NOTEC2:
+						TIM2->CCR1 = rootpwm;
+						break;
+					case MIDI_NOTECSHARP2:
+						TIM2->CCR2 = rootpwm;
+						break;
+					case MIDI_NOTED2:
+						TIM3->CCR1 = rootpwm;
+						break;
+					case MIDI_NOTEDSHARP2:
+						TIM3->CCR2 = rootpwm;
+						break;
+					case MIDI_NOTEE2:
+						TIM3->CCR3 = rootpwm;
+						break;
+					case MIDI_NOTEF2:
+						TIM3->CCR4 = rootpwm;
+						break;
+					case NIDI_NOTEFSHARP2:
+						TIM1->CCR1 = rootpwm;
+						break;
+					case MIDI_NOTEG2:
+						TIM1->CCR2 = rootpwm;
+						break;
+					case MIDI_NOTEGSHARP2:
+						TIM1->CCR3 = rootpwm;
+						break;
+
+				}
+
+				runningStatus = 1;
+				HAL_TIM_Base_Start_IT(&htim16);
+			}
+		}
+	}
+
+}
+
+
+void pwm_switch_off()
+{
+	  TIM2->CCR1 = 0;
+	  TIM2->CCR2 = 0;
+
+	  TIM3->CCR1 = 0;
+	  TIM3->CCR2 = 0;
+	  TIM3->CCR3 = 0;
+	  TIM3->CCR4 = 0;
+
+	  TIM1->CCR1 = 0;
+	  TIM1->CCR2 = 0;
+	  TIM1->CCR3 = 0;
+}
 
 /* USER CODE END EV */
 
@@ -151,6 +284,34 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM16 global interrupt.
+  */
+void TIM16_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM16_IRQn 0 */
+	pwm_switch_off();
+  /* USER CODE END TIM16_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim16);
+  /* USER CODE BEGIN TIM16_IRQn 1 */
+
+  /* USER CODE END TIM16_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART1 global interrupt / USART1 wake-up interrupt through EXTI line 25.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+	pwm_switch_on();
+
+  /* USER CODE END USART1_IRQn 0 */
+  /* USER CODE BEGIN USART1_IRQn 1 */
+
+  /* USER CODE END USART1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

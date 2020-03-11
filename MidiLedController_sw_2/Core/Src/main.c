@@ -23,6 +23,7 @@
 #include "adc.h"
 #include "dma.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -57,7 +58,6 @@ int pwm_arr = 64;
 int pwm_delay = 200;
 
 // ADC
-#define ADC_MAX_DATA_POINTS 64
 uint32_t adc_data_in[ADC_MAX_DATA_POINTS];
 
 /* USER CODE END PV */
@@ -109,38 +109,7 @@ void pwm_fade_test()
 	  }
 }
 
-void pwm_blink_test()
-{
-	  TIM2->CCR1 = 0;
-	  TIM2->CCR2 = 0;
 
-	  TIM3->CCR1 = 0;
-	  TIM3->CCR2 = 0;
-	  TIM3->CCR3 = 0;
-	  TIM3->CCR4 = 0;
-
-	  TIM1->CCR1 = 0;
-	  TIM1->CCR2 = 0;
-	  TIM1->CCR3 = 0;
-
-	  HAL_Delay(pwm_delay);
-
-	  uint32_t rootpwm = sqrt(adc_data_in[0]/16);
-	  if(rootpwm == 0) { rootpwm = 1; }
-	  TIM2->CCR1 = rootpwm;
-	  TIM2->CCR2 = rootpwm;
-
-	  TIM3->CCR1 = rootpwm;
-	  TIM3->CCR2 = rootpwm;
-	  TIM3->CCR3 = rootpwm;
-	  TIM3->CCR4 = rootpwm;
-
-	  TIM1->CCR1 = rootpwm;
-	  TIM1->CCR2 = rootpwm;
-	  TIM1->CCR3 = rootpwm;
-
-	  HAL_Delay(pwm_delay);
-}
 /* USER CODE END 0 */
 
 /**
@@ -176,6 +145,8 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM2_Init();
   MX_ADC_Init();
+  MX_USART1_UART_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
   // setup all output channel timer PWM
@@ -210,6 +181,10 @@ int main(void)
   HAL_ADCEx_Calibration_Start(&hadc);
   HAL_ADC_Start_DMA(&hadc, adc_data_in, ADC_MAX_DATA_POINTS);
 
+  // enable USART receive and interrupt
+  USART1->CR1 |= USART_CR1_RE | USART_CR1_UE | USART_CR1_RXNEIE;
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -218,7 +193,7 @@ int main(void)
   {
 
 	  //pwm_fade_test();
-	  pwm_blink_test();
+	  //pwm_blink_test();
 
     /* USER CODE END WHILE */
 
@@ -235,6 +210,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
@@ -257,6 +233,12 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1;
+  PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
