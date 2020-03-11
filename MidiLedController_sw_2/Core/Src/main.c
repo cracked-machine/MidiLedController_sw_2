@@ -29,6 +29,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <math.h>
+#include "stm32f0xx_it.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,6 +61,7 @@ int pwm_delay = 200;
 // ADC
 uint32_t adc_data_in[ADC_MAX_DATA_POINTS];
 
+volatile char bootconfig;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -109,7 +111,82 @@ void pwm_fade_test()
 	  }
 }
 
+void setMidiChannel()
+{
+	bootconfig = 0;
+	// discover config dip switch settings
+	if(HAL_GPIO_ReadPin(GPIOA, CONFIG1_Pin))
+	{
+	  bootconfig |= (1 << 0);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, CONFIG2_Pin))
+	{
+	  bootconfig |= (1 << 1);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, CONFIG3_Pin))
+	{
+	  bootconfig |= (1 << 2);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, CONFIG4_Pin))
+	{
+	  bootconfig |= (1 << 3);
+	}
 
+	// set MIDI channel
+	switch(bootconfig)
+	{
+		case 0:
+			enabledNoteOnCmd = CH1_NOTE_ON;
+			break;
+		case 1:
+			enabledNoteOnCmd = CH2_NOTE_ON;
+			break;
+		case 2:
+			enabledNoteOnCmd = CH3_NOTE_ON;
+			break;
+		case 3:
+			enabledNoteOnCmd = CH4_NOTE_ON;
+			break;
+		case 4:
+			enabledNoteOnCmd = CH5_NOTE_ON;
+			break;
+		case 5:
+			enabledNoteOnCmd = CH6_NOTE_ON;
+			break;
+		case 6:
+			enabledNoteOnCmd = CH7_NOTE_ON;
+			break;
+		case 7:
+			enabledNoteOnCmd = CH8_NOTE_ON;
+			break;
+		case 8:
+			enabledNoteOnCmd = CH9_NOTE_ON;
+			break;
+		case 9:
+			enabledNoteOnCmd = CH10_NOTE_ON;
+			break;
+		case 10:
+			enabledNoteOnCmd = CH11_NOTE_ON;
+			break;
+		case 11:
+			enabledNoteOnCmd = CH12_NOTE_ON;
+			break;
+		case 12:
+			enabledNoteOnCmd = CH13_NOTE_ON;
+			break;
+		case 13:
+			enabledNoteOnCmd = CH14_NOTE_ON;
+			break;
+		case 14:
+			enabledNoteOnCmd = CH15_NOTE_ON;
+			break;
+		case 15:
+			enabledNoteOnCmd = CH16_NOTE_ON;
+			break;
+
+	}
+
+}
 /* USER CODE END 0 */
 
 /**
@@ -148,6 +225,9 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
+
+  // discover boot config flags (set using onboard DIP4)
+  setMidiChannel(bootconfig);
 
   // setup all output channel timer PWM
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);		// #1
@@ -191,10 +271,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-	  //pwm_fade_test();
-	  //pwm_blink_test();
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

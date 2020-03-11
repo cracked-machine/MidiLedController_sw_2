@@ -38,7 +38,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h \
  ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h \
  ../Core/Inc/adc.h ../Core/Inc/main.h ../Core/Inc/dma.h ../Core/Inc/tim.h \
- ../Core/Inc/usart.h ../Core/Inc/gpio.h
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h ../Core/Inc/stm32f0xx_it.h
 
 ../Core/Inc/main.h:
 
@@ -129,3 +129,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/usart.h:
 
 ../Core/Inc/gpio.h:
+
+../Core/Inc/stm32f0xx_it.h:

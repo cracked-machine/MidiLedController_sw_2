@@ -56,6 +56,7 @@ extern "C" {
 extern int pwm_delay;
 #define ADC_MAX_DATA_POINTS 64
 extern uint32_t adc_data_in[ADC_MAX_DATA_POINTS];
+extern volatile char bootconfig;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
@@ -71,6 +72,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define CONFIG1_Pin GPIO_PIN_4
+#define CONFIG1_GPIO_Port GPIOA
+#define CONFIG2_Pin GPIO_PIN_5
+#define CONFIG2_GPIO_Port GPIOA
+#define CONFIG3_Pin GPIO_PIN_6
+#define CONFIG3_GPIO_Port GPIOA
+#define CONFIG4_Pin GPIO_PIN_7
+#define CONFIG4_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

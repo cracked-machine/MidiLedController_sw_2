@@ -44,41 +44,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 
-// MIDI
 
-// first 128 values are note data commands
-#define MIDI_MAX_NOTE 0x7F
-
-// common midi data
-#define MIDI_TIMCLK 248
-#define MIDI_NOTEON 144
-#define MIDI_NOTEC2 36
-#define MIDI_NOTECSHARP2 37
-#define MIDI_NOTED2 38
-#define MIDI_NOTEDSHARP2 39
-#define MIDI_NOTEE2 40
-#define MIDI_NOTEF2 41
-#define NIDI_NOTEFSHARP2 42
-#define MIDI_NOTEG2 43
-#define MIDI_NOTEGSHARP2 44
-
-// Note On commands
-#define CH1_NOTE_ON 0x90
-#define CH2_NOTE_ON 0x91
-#define CH3_NOTE_ON 0x92
-#define CH4_NOTE_ON 0x93
-#define CH5_NOTE_ON 0x94
-#define CH6_NOTE_ON 0x95
-#define CH7_NOTE_ON 0x96
-#define CH8_NOTE_ON 0x97
-#define CH9_NOTE_ON 0x98
-#define CH10_NOTE_ON 0x99
-#define CH11_NOTE_ON 0x9A
-#define CH12_NOTE_ON 0x9B
-#define CH13_NOTE_ON 0x9C
-#define CH14_NOTE_ON 0x9D
-#define CH15_NOTE_ON 0x9E
-#define CH16_NOTE_ON 0x9F
 
 int enabledNoteOnCmd = CH1_NOTE_ON;				// default to MIDI Channel 1
 int newMidiByte = 0;
@@ -133,7 +99,11 @@ void pwm_switch_on()
 					while((USART1->ISR & USART_ISR_RXNE) != USART_ISR_RXNE){  }
 					midiData[m] = (uint8_t)(USART1->RDR);
 				}
-				uint32_t rootpwm = sqrt(adc_data_in[0]/16);
+
+				// gamma correction for ext. pot analog value
+				//uint32_t rootpwm = sqrt(adc_data_in[0]/16);
+				uint32_t rootpwm = 256;		// hardcoded (missing pot)
+				// make sure its not zero/off
 				if(rootpwm == 0) { rootpwm = 1; }
 
 				switch(newMidiByte)					// switch on out chan for the MIDI note

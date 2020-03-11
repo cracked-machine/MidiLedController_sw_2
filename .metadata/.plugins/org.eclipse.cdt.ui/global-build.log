@@ -4003,3 +4003,539 @@ Finished building: MidiLedController_sw_2.bin
  
 Finished building: MidiLedController_sw_2.list
  
+11:03:37 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.o"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+Finished building: MidiLedController_sw_2.bin
+   text	   data	    bss	    dec	    hex	filename
+  25572	    132	   2228	  27932	   6d1c	MidiLedController_sw_2.elf
+ 
+Finished building: default.size.stdout
+ 
+Finished building: MidiLedController_sw_2.list
+ 
+11:08:34 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/adc.h:27:0,
+                 from ../Core/Src/adc.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Src/main.c:22:0:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/dma.h:28:0,
+                 from ../Core/Src/dma.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/gpio.h:28:0,
+                 from ../Core/Src/gpio.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+make: *** [Core/Src/subdir.mk:50: Core/Src/dma.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:52: Core/Src/gpio.o] Error 1
+../Core/Src/adc.c: In function 'MX_ADC_Init':
+../Core/Src/adc.c:53:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:48: Core/Src/adc.o] Error 1
+../Core/Src/main.c: In function 'setMidiChannel':
+../Core/Src/main.c:139:4: error: 'enabledNoteOnCmd' undeclared (first use in this function)
+    enabledNoteOnCmd = CH1_NOTE_ON;
+    ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:139:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:139:23: error: 'CH1_NOTE_ON' undeclared (first use in this function)
+    enabledNoteOnCmd = CH1_NOTE_ON;
+                       ^~~~~~~~~~~
+../Core/Src/main.c:142:23: error: 'CH2_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH2_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:145:23: error: 'CH3_NOTE_ON' undeclared (first use in this function); did you mean 'CH2_NOTE_ON'?
+    enabledNoteOnCmd = CH3_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH2_NOTE_ON
+../Core/Src/main.c:148:23: error: 'CH4_NOTE_ON' undeclared (first use in this function); did you mean 'CH3_NOTE_ON'?
+    enabledNoteOnCmd = CH4_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH3_NOTE_ON
+../Core/Src/main.c:151:23: error: 'CH5_NOTE_ON' undeclared (first use in this function); did you mean 'CH4_NOTE_ON'?
+    enabledNoteOnCmd = CH5_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH4_NOTE_ON
+../Core/Src/main.c:154:23: error: 'CH6_NOTE_ON' undeclared (first use in this function); did you mean 'CH5_NOTE_ON'?
+    enabledNoteOnCmd = CH6_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH5_NOTE_ON
+../Core/Src/main.c:157:23: error: 'CH7_NOTE_ON' undeclared (first use in this function); did you mean 'CH6_NOTE_ON'?
+    enabledNoteOnCmd = CH7_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH6_NOTE_ON
+../Core/Src/main.c:160:23: error: 'CH8_NOTE_ON' undeclared (first use in this function); did you mean 'CH7_NOTE_ON'?
+    enabledNoteOnCmd = CH8_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH7_NOTE_ON
+../Core/Src/main.c:163:23: error: 'CH9_NOTE_ON' undeclared (first use in this function); did you mean 'CH8_NOTE_ON'?
+    enabledNoteOnCmd = CH9_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH8_NOTE_ON
+../Core/Src/main.c:166:23: error: 'CH10_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH10_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:169:23: error: 'CH11_NOTE_ON' undeclared (first use in this function); did you mean 'CH10_NOTE_ON'?
+    enabledNoteOnCmd = CH11_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH10_NOTE_ON
+../Core/Src/main.c:172:23: error: 'CH12_NOTE_ON' undeclared (first use in this function); did you mean 'CH11_NOTE_ON'?
+    enabledNoteOnCmd = CH12_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH11_NOTE_ON
+../Core/Src/main.c:175:23: error: 'CH13_NOTE_ON' undeclared (first use in this function); did you mean 'CH12_NOTE_ON'?
+    enabledNoteOnCmd = CH13_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH12_NOTE_ON
+../Core/Src/main.c:178:23: error: 'CH14_NOTE_ON' undeclared (first use in this function); did you mean 'CH13_NOTE_ON'?
+    enabledNoteOnCmd = CH14_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH13_NOTE_ON
+../Core/Src/main.c:181:23: error: 'CH15_NOTE_ON' undeclared (first use in this function); did you mean 'CH14_NOTE_ON'?
+    enabledNoteOnCmd = CH15_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH14_NOTE_ON
+../Core/Src/main.c:184:23: error: 'CH16_NOTE_ON' undeclared (first use in this function); did you mean 'CH15_NOTE_ON'?
+    enabledNoteOnCmd = CH16_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH15_NOTE_ON
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:307:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:337:6: warning: conflicting types for 'Error_Handler'
+ void Error_Handler(void)
+      ^~~~~~~~~~~~~
+../Core/Src/main.c:307:5: note: previous implicit declaration of 'Error_Handler' was here
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:09:22 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/adc.h:27:0,
+                 from ../Core/Src/adc.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/gpio.h:28:0,
+                 from ../Core/Src/gpio.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/dma.h:28:0,
+                 from ../Core/Src/dma.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+../Core/Src/adc.c: In function 'MX_ADC_Init':
+../Core/Src/adc.c:53:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:50: Core/Src/dma.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:52: Core/Src/gpio.o] Error 1
+make: *** [Core/Src/subdir.mk:48: Core/Src/adc.o] Error 1
+In file included from ../Core/Src/main.c:22:0:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:3: warning: implicit declaration of function 'setMidiChannel'; did you mean 'DMA1_Channel1'? [-Wimplicit-function-declaration]
+   setMidiChannel(bootconfig);
+   ^~~~~~~~~~~~~~
+   DMA1_Channel1
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:233:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:263:6: warning: conflicting types for 'Error_Handler'
+ void Error_Handler(void)
+      ^~~~~~~~~~~~~
+../Core/Src/main.c:233:5: note: previous implicit declaration of 'Error_Handler' was here
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:11:19 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/gpio.h:28:0,
+                 from ../Core/Src/gpio.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/dma.h:28:0,
+                 from ../Core/Src/dma.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+make: *** [Core/Src/subdir.mk:50: Core/Src/dma.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:52: Core/Src/gpio.o] Error 1
+In file included from ../Core/Src/main.c:22:0:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+In file included from ../Core/Inc/adc.h:27:0,
+                 from ../Core/Src/adc.c:21:
+../Core/Inc/main.h:68:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void Error_Handler(void);
+ ^~~~
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:225:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:255:6: warning: conflicting types for 'Error_Handler'
+ void Error_Handler(void)
+      ^~~~~~~~~~~~~
+../Core/Src/main.c:225:5: note: previous implicit declaration of 'Error_Handler' was here
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+../Core/Src/adc.c: In function 'MX_ADC_Init':
+../Core/Src/adc.c:53:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+     Error_Handler();
+     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:48: Core/Src/adc.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:11:43 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25572	    132	   2228	  27932	   6d1c	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+Finished building: MidiLedController_sw_2.bin
+ 
+ 
+Finished building: MidiLedController_sw_2.list
+ 
+11:12:59 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'setMidiChannel':
+../Core/Src/main.c:136:4: error: 'enabledNoteOnCmd' undeclared (first use in this function)
+    enabledNoteOnCmd = CH1_NOTE_ON;
+    ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:136:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:136:23: error: 'CH1_NOTE_ON' undeclared (first use in this function)
+    enabledNoteOnCmd = CH1_NOTE_ON;
+                       ^~~~~~~~~~~
+../Core/Src/main.c:139:23: error: 'CH2_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH2_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:142:23: error: 'CH3_NOTE_ON' undeclared (first use in this function); did you mean 'CH2_NOTE_ON'?
+    enabledNoteOnCmd = CH3_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH2_NOTE_ON
+../Core/Src/main.c:145:23: error: 'CH4_NOTE_ON' undeclared (first use in this function); did you mean 'CH3_NOTE_ON'?
+    enabledNoteOnCmd = CH4_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH3_NOTE_ON
+../Core/Src/main.c:148:23: error: 'CH5_NOTE_ON' undeclared (first use in this function); did you mean 'CH4_NOTE_ON'?
+    enabledNoteOnCmd = CH5_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH4_NOTE_ON
+../Core/Src/main.c:151:23: error: 'CH6_NOTE_ON' undeclared (first use in this function); did you mean 'CH5_NOTE_ON'?
+    enabledNoteOnCmd = CH6_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH5_NOTE_ON
+../Core/Src/main.c:154:23: error: 'CH7_NOTE_ON' undeclared (first use in this function); did you mean 'CH6_NOTE_ON'?
+    enabledNoteOnCmd = CH7_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH6_NOTE_ON
+../Core/Src/main.c:157:23: error: 'CH8_NOTE_ON' undeclared (first use in this function); did you mean 'CH7_NOTE_ON'?
+    enabledNoteOnCmd = CH8_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH7_NOTE_ON
+../Core/Src/main.c:160:23: error: 'CH9_NOTE_ON' undeclared (first use in this function); did you mean 'CH8_NOTE_ON'?
+    enabledNoteOnCmd = CH9_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH8_NOTE_ON
+../Core/Src/main.c:163:23: error: 'CH10_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH10_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:166:23: error: 'CH11_NOTE_ON' undeclared (first use in this function); did you mean 'CH10_NOTE_ON'?
+    enabledNoteOnCmd = CH11_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH10_NOTE_ON
+../Core/Src/main.c:169:23: error: 'CH12_NOTE_ON' undeclared (first use in this function); did you mean 'CH11_NOTE_ON'?
+    enabledNoteOnCmd = CH12_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH11_NOTE_ON
+../Core/Src/main.c:172:23: error: 'CH13_NOTE_ON' undeclared (first use in this function); did you mean 'CH12_NOTE_ON'?
+    enabledNoteOnCmd = CH13_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH12_NOTE_ON
+../Core/Src/main.c:175:23: error: 'CH14_NOTE_ON' undeclared (first use in this function); did you mean 'CH13_NOTE_ON'?
+    enabledNoteOnCmd = CH14_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH13_NOTE_ON
+../Core/Src/main.c:178:23: error: 'CH15_NOTE_ON' undeclared (first use in this function); did you mean 'CH14_NOTE_ON'?
+    enabledNoteOnCmd = CH15_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH14_NOTE_ON
+../Core/Src/main.c:181:23: error: 'CH16_NOTE_ON' undeclared (first use in this function); did you mean 'CH15_NOTE_ON'?
+    enabledNoteOnCmd = CH16_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH15_NOTE_ON
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:13:52 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'setMidiChannel':
+../Core/Src/main.c:137:23: error: 'CH1_NOTE_ON' undeclared (first use in this function)
+    enabledNoteOnCmd = CH1_NOTE_ON;
+                       ^~~~~~~~~~~
+../Core/Src/main.c:137:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:140:23: error: 'CH2_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH2_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:143:23: error: 'CH3_NOTE_ON' undeclared (first use in this function); did you mean 'CH2_NOTE_ON'?
+    enabledNoteOnCmd = CH3_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH2_NOTE_ON
+../Core/Src/main.c:146:23: error: 'CH4_NOTE_ON' undeclared (first use in this function); did you mean 'CH3_NOTE_ON'?
+    enabledNoteOnCmd = CH4_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH3_NOTE_ON
+../Core/Src/main.c:149:23: error: 'CH5_NOTE_ON' undeclared (first use in this function); did you mean 'CH4_NOTE_ON'?
+    enabledNoteOnCmd = CH5_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH4_NOTE_ON
+../Core/Src/main.c:152:23: error: 'CH6_NOTE_ON' undeclared (first use in this function); did you mean 'CH5_NOTE_ON'?
+    enabledNoteOnCmd = CH6_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH5_NOTE_ON
+../Core/Src/main.c:155:23: error: 'CH7_NOTE_ON' undeclared (first use in this function); did you mean 'CH6_NOTE_ON'?
+    enabledNoteOnCmd = CH7_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH6_NOTE_ON
+../Core/Src/main.c:158:23: error: 'CH8_NOTE_ON' undeclared (first use in this function); did you mean 'CH7_NOTE_ON'?
+    enabledNoteOnCmd = CH8_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH7_NOTE_ON
+../Core/Src/main.c:161:23: error: 'CH9_NOTE_ON' undeclared (first use in this function); did you mean 'CH8_NOTE_ON'?
+    enabledNoteOnCmd = CH9_NOTE_ON;
+                       ^~~~~~~~~~~
+                       CH8_NOTE_ON
+../Core/Src/main.c:164:23: error: 'CH10_NOTE_ON' undeclared (first use in this function); did you mean 'CH1_NOTE_ON'?
+    enabledNoteOnCmd = CH10_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH1_NOTE_ON
+../Core/Src/main.c:167:23: error: 'CH11_NOTE_ON' undeclared (first use in this function); did you mean 'CH10_NOTE_ON'?
+    enabledNoteOnCmd = CH11_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH10_NOTE_ON
+../Core/Src/main.c:170:23: error: 'CH12_NOTE_ON' undeclared (first use in this function); did you mean 'CH11_NOTE_ON'?
+    enabledNoteOnCmd = CH12_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH11_NOTE_ON
+../Core/Src/main.c:173:23: error: 'CH13_NOTE_ON' undeclared (first use in this function); did you mean 'CH12_NOTE_ON'?
+    enabledNoteOnCmd = CH13_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH12_NOTE_ON
+../Core/Src/main.c:176:23: error: 'CH14_NOTE_ON' undeclared (first use in this function); did you mean 'CH13_NOTE_ON'?
+    enabledNoteOnCmd = CH14_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH13_NOTE_ON
+../Core/Src/main.c:179:23: error: 'CH15_NOTE_ON' undeclared (first use in this function); did you mean 'CH14_NOTE_ON'?
+    enabledNoteOnCmd = CH15_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH14_NOTE_ON
+../Core/Src/main.c:182:23: error: 'CH16_NOTE_ON' undeclared (first use in this function); did you mean 'CH15_NOTE_ON'?
+    enabledNoteOnCmd = CH16_NOTE_ON;
+                       ^~~~~~~~~~~~
+                       CH15_NOTE_ON
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:14:39 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Core/Src/main.o: In function `setMidiChannel':
+/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Debug/../Core/Src/main.c:187: undefined reference to `bootconfig'
+Core/Src/main.o: In function `main':
+/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/Debug/../Core/Src/main.c:270: undefined reference to `bootconfig'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:44: MidiLedController_sw_2.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:16:46 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:64:15: error: conflicting type qualifiers for 'bootconfig'
+ volatile char bootconfig;
+               ^~~~~~~~~~
+In file included from ../Core/Src/main.c:22:0:
+../Core/Inc/main.h:59:13: note: previous declaration of 'bootconfig' was here
+ extern char bootconfig;
+             ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:54: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+11:17:13 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26020	    132	   2236	  28388	   6ee4	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+Finished building: MidiLedController_sw_2.bin
+ 
+ 
+Finished building: MidiLedController_sw_2.list
+ 
+11:17:36 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26020	    132	   2236	  28388	   6ee4	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+ 
+11:18:49 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26020	    132	   2236	  28388	   6ee4	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+ 
+11:21:16 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26020	    132	   2236	  28388	   6ee4	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+ 
+11:22:12 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26016	    132	   2236	  28384	   6ee0	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+Finished building: MidiLedController_sw_2.bin
+ 
+ 
+Finished building: MidiLedController_sw_2.list
+ 
+11:23:27 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26016	    132	   2236	  28384	   6ee0	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+ 
+20:51:38 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DUSE_FULL_LL_DRIVER -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
+arm-none-eabi-size   MidiLedController_sw_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18188	     28	   2236	  20452	   4fe4	MidiLedController_sw_2.elf
+Finished building: default.size.stdout
+Finished building: MidiLedController_sw_2.bin
+ 
+ 
+Finished building: MidiLedController_sw_2.list
+ 
