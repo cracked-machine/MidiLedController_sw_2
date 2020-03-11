@@ -1,10 +1,20 @@
-23:50:04 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
+00:29:51 **** Incremental Build of configuration Debug for project MidiLedController_sw_2 ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F051x8 -DDEBUG -c -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list"   -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MidiLedController_sw_2.elf
+ 
+arm-none-eabi-objdump -h -S  MidiLedController_sw_2.elf  > "MidiLedController_sw_2.list"
+arm-none-eabi-objcopy  -O binary  MidiLedController_sw_2.elf  "MidiLedController_sw_2.bin"
 arm-none-eabi-size   MidiLedController_sw_2.elf 
+Finished building: MidiLedController_sw_2.bin
    text	   data	    bss	    dec	    hex	filename
-   9692	     32	   1760	  11484	   2cdc	MidiLedController_sw_2.elf
+  21280	    132	   2148	  23560	   5c08	MidiLedController_sw_2.elf
 Finished building: default.size.stdout
  
+ 
+Finished building: MidiLedController_sw_2.list
+ 
 
-23:50:04 Build Finished. 0 errors, 0 warnings. (took 594ms)
+00:29:52 Build Finished. 0 errors, 0 warnings. (took 800ms)
 

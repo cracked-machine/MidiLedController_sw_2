@@ -20,6 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
+#include "dma.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -45,11 +47,19 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+// TIMER/PWM
 uint32_t pwm_on_duty = 0;
-uint16_t pwm_duty = 1;
 int pwm_fade_up = 1;
+
+uint16_t pwm_duty = 8192;
 int pwm_arr = 64;
-int pwm_delay = 50;
+int pwm_delay = 200;
+
+// ADC
+#define ADC_MAX_DATA_POINTS 64
+uint32_t adc_data_in[ADC_MAX_DATA_POINTS];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -115,17 +125,19 @@ void pwm_blink_test()
 
 	  HAL_Delay(pwm_delay);
 
-	  TIM2->CCR1 = pwm_duty;
-	  TIM2->CCR2 = pwm_duty;
+	  uint32_t rootpwm = sqrt(adc_data_in[0]/16);
+	  if(rootpwm == 0) { rootpwm = 1; }
+	  TIM2->CCR1 = rootpwm;
+	  TIM2->CCR2 = rootpwm;
 
-	  TIM3->CCR1 = pwm_duty;
-	  TIM3->CCR2 = pwm_duty;
-	  TIM3->CCR3 = pwm_duty;
-	  TIM3->CCR4 = pwm_duty;
+	  TIM3->CCR1 = rootpwm;
+	  TIM3->CCR2 = rootpwm;
+	  TIM3->CCR3 = rootpwm;
+	  TIM3->CCR4 = rootpwm;
 
-	  TIM1->CCR1 = pwm_duty;
-	  TIM1->CCR2 = pwm_duty;
-	  TIM1->CCR3 = pwm_duty;
+	  TIM1->CCR1 = rootpwm;
+	  TIM1->CCR2 = rootpwm;
+	  TIM1->CCR3 = rootpwm;
 
 	  HAL_Delay(pwm_delay);
 }
@@ -159,9 +171,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM1_Init();
   MX_TIM3_Init();
   MX_TIM2_Init();
+  MX_ADC_Init();
   /* USER CODE BEGIN 2 */
 
   // setup all output channel timer PWM
@@ -193,6 +207,9 @@ int main(void)
   TIM2->ARR = pwm_arr;
   TIM3->ARR = pwm_arr;
 
+  HAL_ADCEx_Calibration_Start(&hadc);
+  HAL_ADC_Start_DMA(&hadc, adc_data_in, ADC_MAX_DATA_POINTS);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -221,9 +238,11 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSI14;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSI14State = RCC_HSI14_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.HSI14CalibrationValue = 16;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
