@@ -40,8 +40,8 @@ MidiLedController_sw_2.bin \
 all: MidiLedController_sw_2.elf secondary-outputs
 
 # Tool invocations
-MidiLedController_sw_2.elf: $(OBJS) $(USER_OBJS) /home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld
-	arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"/home/chris/Projects/Embedded/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MidiLedController_sw_2.elf: $(OBJS) $(USER_OBJS) /Users/chrissutton/Projects/EmbeddedProjects/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld
+	arm-none-eabi-gcc -o "MidiLedController_sw_2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"/Users/chrissutton/Projects/EmbeddedProjects/MidiLedController_sw_2/MidiLedController_sw_2/STM32F051K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MidiLedController_sw_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

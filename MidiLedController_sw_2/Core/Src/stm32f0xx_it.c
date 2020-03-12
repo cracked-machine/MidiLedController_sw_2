@@ -100,9 +100,14 @@ void pwm_switch_on()
 					midiData[m] = (uint8_t)(USART1->RDR);
 				}
 
-				// gamma correction for ext. pot analog value
+				// LED Global Brightness
+				//
+				// gamma correction for ext. pot analog value. Use if HW pot installed
 				//uint32_t rootpwm = sqrt(adc_data_in[0]/16);
-				uint32_t rootpwm = 256;		// hardcoded (missing pot)
+				//
+				uint32_t rootpwm = 32;		// brightness hardcoded Max needed is ~64. Use if HW pot NOT INSTALLED
+				//
+
 				// make sure its not zero/off
 				if(rootpwm == 0) { rootpwm = 1; }
 
