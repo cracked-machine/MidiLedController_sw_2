@@ -1,0 +1,116 @@
+Configuration	MidiLedController_sw_2
+STM32CubeMX 	5.6.0
+Date	06/06/2020
+MCU	STM32F051K8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN0	ADC_IN0	PA0
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH1	TIM1_CH1	PA8
+TIM1	PWM Generation CH2	TIM1_CH2	PA9
+TIM1	PWM Generation CH3	TIM1_CH3	PA10
+TIM2	PWM Generation CH1	TIM2_CH1	PA15
+TIM2	PWM Generation CH2	TIM2_CH2	PB3
+TIM3	PWM Generation CH1	TIM3_CH1	PB4
+TIM3	PWM Generation CH2	TIM3_CH2	PB5
+TIM3	PWM Generation CH3	TIM3_CH3	PB0
+TIM3	PWM Generation CH4	TIM3_CH4	PB1
+TIM16	Enable_Timer	TIM16_VS_ClockSourceINT	VP_TIM16_VS_ClockSourceINT
+TIM16	One pulse	TIM16_VS_OPM	VP_TIM16_VS_OPM
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PB6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+6	PA0	ADC_IN0	
+10	PA4	GPIO_Input	CONFIG1
+11	PA5	GPIO_Input	CONFIG2
+12	PA6	GPIO_Input	CONFIG3
+13	PA7	GPIO_Input	CONFIG4
+14	PB0	TIM3_CH3	
+15	PB1	TIM3_CH4	
+18	PA8	TIM1_CH1	
+19	PA9	TIM1_CH2	
+20	PA10	TIM1_CH3	
+23	PA13	SYS_SWDIO	
+24	PA14	SYS_SWCLK	
+25	PA15	TIM2_CH1	
+26	PB3	TIM2_CH2	
+27	PB4	TIM3_CH1	
+28	PB5	TIM3_CH2	
+29	PB6	USART1_TX	
+30	PB7	USART1_RX	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC	IN0	ADC_IN0	PA0
+SYS	Serial_Wire	SYS_SWCLK	PA14
+SYS	Serial_Wire	SYS_SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH1	TIM1_CH1	PA8
+TIM1	PWM Generation CH2	TIM1_CH2	PA9
+TIM1	PWM Generation CH3	TIM1_CH3	PA10
+TIM2	PWM Generation CH1	TIM2_CH1	PA15
+TIM2	PWM Generation CH2	TIM2_CH2	PB3
+TIM3	PWM Generation CH1	TIM3_CH1	PB4
+TIM3	PWM Generation CH2	TIM3_CH2	PB5
+TIM3	PWM Generation CH3	TIM3_CH3	PB0
+TIM3	PWM Generation CH4	TIM3_CH4	PB1
+TIM16	Enable_Timer	TIM16_VS_ClockSourceINT	VP_TIM16_VS_ClockSourceINT
+TIM16	One pulse	TIM16_VS_OPM	VP_TIM16_VS_OPM
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PB6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+6	PA0	ADC_IN0	
+10	PA4	GPIO_Input	CONFIG1
+11	PA5	GPIO_Input	CONFIG2
+12	PA6	GPIO_Input	CONFIG3
+13	PA7	GPIO_Input	CONFIG4
+14	PB0	TIM3_CH3	
+15	PB1	TIM3_CH4	
+18	PA8	TIM1_CH1	
+19	PA9	TIM1_CH2	
+20	PA10	TIM1_CH3	
+23	PA13	SYS_SWDIO	
+24	PA14	SYS_SWCLK	
+25	PA15	TIM2_CH1	
+26	PB3	TIM2_CH2	
+27	PB4	TIM3_CH1	
+28	PB5	TIM3_CH2	
+29	PB6	USART1_TX	
+30	PB7	USART1_RX	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : MidiLedController_sw_2
+Project Folder : /Users/chrissutton/Projects/EmbeddedProjects/MidiLedController_sw_2/MidiLedController_sw_2
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_F0 V1.11.0
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
